@@ -10,17 +10,21 @@
 <body>
     <div class="container">
         <form action="/" id="form-body">
+            <div class="err-messageWrapper">
+                <h1 id="title">Registration</h1>
+                <p class="err-message"></p>
+            </div>
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Enter Email:">
+            <input class="form-input" type="email" id="email" name="email" placeholder="Enter Email:" required>
     
             <label for="password">Password</label>
-            <input type="text" id="password" name="password" placeholder="Enter Password">
+            <input class="form-input" type="text" id="password" name="password" placeholder="Enter Password:" minlength="5" maxlength="12">
     
             <label for="confirm_password">Confirm Password</label>
-            <input type="text" id="confirm_password" name="confirm_password" placeholder="Enter Password">
+            <input class="form-input" type="text" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
     
             <label for="country">Country</label>
-            <select name="country" id="country">
+            <select class="form-input" name="country" id="country" required>
                 <option value="United States">United States</option>
                 <option value="Italy">Italy</option>
                 <option value="Spain">Spain</option>
@@ -29,7 +33,9 @@
                 <option value="Japan">Japan</option>
             </select>
             <label for="zipcode">Zip Code</label>
-            <input type="text" id="zipcode" name="zipcode" placeholder="Enter Zip Code">
+            <input class="form-input" type="text" id="zipcode" name="zipcode" placeholder="Enter Zip Code" minlength="5" maxlength="5" required>
+            
+            <input class="submitbtn" type="submit">
         </form>
     </div>
     
