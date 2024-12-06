@@ -30,12 +30,14 @@ body{
     align-content: center;
     gap: .4rem;
     /* border: 2px solid black; */
-    height: 500px;
+    height: 600px;
     position: relative;
-    top: 200px;
+    top: 150px;
     padding: 2.8rem 3.8rem;
     border-radius: 1.8rem;
     background-color: #fff;
+    width: 400px;
+
 
 }
 
@@ -77,12 +79,22 @@ body{
 .err-messageWrapper{
     display: flex;
     flex-direction: column;
-    min-height: 80px;
+    min-height: 85px;
+
 
 }
 
 .err-message{
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 100;
     color: red;
+    padding: 6px 4px;
+}
+
+label{
+    padding-bottom: 4px;
+}
+
+.error{
+    border: 2px solid red;
 }
